@@ -1,57 +1,71 @@
 @charset "UTF-8";
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #131368;
-    color: #ffffff;
-    text-align: center;
-}
-
-header h1 {
-    text-shadow: 2px 2px 3px #0000008e;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #131368;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
 }
 
 section {
-    margin: 30px;
-    background-color: #dce9fc8f;
-    color: #000000;
-    border-radius: 20px;
-    padding: 10px;
-    margin: auto;
-    width: 600px;
-    height: 400px;
-    box-shadow: 3px 3px 10px #00000033;
+  background-color: #dce9fc8f;
+  color: #000000;
+  border-radius: 20px;
+  padding: 10px;
+  margin: auto;
+  width: 600px;
+  height: 400px;
+  box-shadow: 3px 3px 10px #00000033;
 }
 
 section div {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
 section div#title {
-    color: #131368;
-    font-size: 1.3em;
+  color: #131368;
+  font-size: 1.3em;
 }
 
 section div img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 2px solid #131368;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid #131368;
 }
 
 footer {
-    font-style: italic;
-    font-size: 0.8em;
-    text-shadow: 1px 1px 0px #00000067;
+  font-style: italic;
+  font-size: 0.8em;
+  text-shadow: 1px 1px 0px #00000067;
 }
 
 footer a {
-    text-decoration: none;
-    color: #c55050;
-    font-weight: bold;
+  text-decoration: none;
+  color: #c55050;
+  font-weight: bold;
 }
 
 footer a:hover {
-    color: #f58585;
+  color: #f58585;
+}
+
+@media (max-width: 600px) {
+  section {
+    width: calc(100vw - 60px);
+    padding: 0;
+    margin: 30px;
+    height: auto;
+  }
+
+  section div img {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  footer {
+    font-size: 0.7em;
+  }
 }
